@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gerenciamento de Tarefas</title>
+</head>
+<body>
+    <h1>Gerenciamento de Tarefas</h1>
+    <div>
+        <input type="text" id="title" placeholder="Título da Tarefa">
+        <input type="text" id="description" placeholder="Descrição da Tarefa">
+        <button id="addTaskBtn">Adicionar Tarefa</button>
+    </div>
+    <ul id="taskList"></ul>
+
+    <!-- Modal -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Editar Tarefa</h2>
+            <input type="text" id="editTitle" placeholder="Novo Título">
+            <input type="text" id="editDescription" placeholder="Nova Descrição">
+            <button id="saveEditBtn">Salvar</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
